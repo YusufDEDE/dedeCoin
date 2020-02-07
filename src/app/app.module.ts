@@ -8,6 +8,7 @@ import { BlockViewComponent } from './components/block-view/block-view.component
 import { AppRoutingModule} from './app.routing.module';
 import { TransactionsTableComponent } from './components/transactions-table/transactions-table.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { CreateTransactionComponent } from './pages/create-transaction/create-transaction.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
     BlockchainViewerComponent,
     BlockViewComponent,
     TransactionsTableComponent,
-    SettingsComponent
+    SettingsComponent,
+    CreateTransactionComponent
   ],
   imports: [
     BrowserModule,

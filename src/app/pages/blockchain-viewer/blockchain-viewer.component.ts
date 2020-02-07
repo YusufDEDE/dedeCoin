@@ -20,7 +20,7 @@ export class BlockchainViewerComponent implements OnInit {
   }
 
   showTransactions(block) {
-    this.selectedBlock = 
+    
   }
 
 }
