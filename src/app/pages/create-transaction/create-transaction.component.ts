@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlockchainService } from 'src/app/services/blockchain.service';
-import { Transaction } from 'savjeecoin';
+import { Transaction } from 'savjeecoin/src/blockchain';
 
 @Component({
   selector: 'app-create-transaction',
@@ -22,9 +22,9 @@ export class CreateTransactionComponent implements OnInit {
 
   createTransaction() {
     this.newTx.fromAddress = this.walletKey.publicKey;
-    this.newTx.singTransaction(this.walletKey.keyObj);
+    this.newTx.signTransaction(this.walletKey.keyObj);
 
-    this.blockchainService.addTransactions(this.newTx);
+    this.blockchainService.addTransaction(this.newTx);
 
     this.newTx = new Transaction();
   }

@@ -4,7 +4,8 @@
 
     <app-block-view 
         *ngFor="let block of blocks" 
-        [block] ="block">
+        [block]="block"
+        (click)="showTransactions(block)">
     </app-block-view>
 </div>
 
